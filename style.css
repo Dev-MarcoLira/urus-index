@@ -1,0 +1,142 @@
+*{
+
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+
+}
+
+.container{
+    width: 1080px;
+    margin: auto;
+}
+
+
+
+body, html{
+
+    width: 100vw;
+    min-height: 100vh;
+    background-color: black;
+
+}
+
+header{
+    height: 7%;
+
+    background-color: black;
+}
+
+header .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo{
+    
+    width: 100px;
+    height: 50px;
+    background-image: url('images/logo_nao_oficial.jpg');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+}
+
+header ul{
+    display: flex;
+}
+
+header ul li{
+    margin: 0 10px;
+}
+
+header ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+
+
+
+main{
+    display: flex;
+    flex-direction: column;
+}
+
+section.find{
+    width: 100%;
+}
+
+
+.find .search-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px;
+
+    background-color: rgb(242, 11, 172);
+}
+
+.find .categories{
+    width: 100%;
+}
+
+.find .categories ul{
+    width: 100%;
+    list-style: none;
+    display: flex;
+}
+
+.find .categories ul > *{
+    width: 25%;
+
+    background-color: #4d4b4b;
+    text-align: center;
+}
+
+
+
+.find .categories ul > *:hover{
+    background-color: rgb(169, 168, 168);
+    transform: 0.5s;
+}
+
+.find .categories ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+section.products{
+  width: 100%;
+  padding: 10px;
+  
+}
+
+.products p{
+  color: white;
+}
+
+
+.products .recommended, .products .best-sellers{
+  width: 100%;
+}
+
+.recommended > div, .best-sellers > div{
+  display: flex;
+}
+
+.product{
+
+  width: 100px;
+  height: 100px;
+
+  padding: 10px;
+  margin: 0 10px;
+  
+  background-color: gray;
+  
+}
