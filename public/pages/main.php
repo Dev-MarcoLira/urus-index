@@ -1,9 +1,3 @@
-<?php
-
-    
-
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -13,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Urus Store</title>
 
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="<?php echo PATH_CSS; ?>style.css">
 </head>
 
 <body>
@@ -28,9 +22,9 @@
 
       <ul>
 
-        <li><a href="">Conta</a></li>
-        <li><a href="">Carrinho</a></li>
-        <li><a href="">SAC</a></li>
+        <li><a href="conta">Conta</a></li>
+        <li><a href="carrinho">Carrinho</a></li>
+        <li><a href="sac">SAC</a></li>
         <li><a href="login">Login</a></li>
 
       </ul>
@@ -44,7 +38,7 @@
     <section class="find">
 
       <div class="search-container">
-        <img src="images/search.png" alt="search icon">
+        <img src="<?php echo PATH_IMAGES; ?>search.png" alt="search icon">
       </div>
 
       <div class="categories">

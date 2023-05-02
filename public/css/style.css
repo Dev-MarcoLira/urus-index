@@ -38,7 +38,7 @@ header .logo{
     
     width: 100px;
     height: 50px;
-    background-image: url('images/logo_nao_oficial.jpg');
+    background-image: url('../../images/logo_nao_oficial.jpg');
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;

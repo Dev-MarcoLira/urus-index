@@ -2,10 +2,6 @@
 
     if(isset($_POST['name']))
         echo 'Hello '.$_POST['name'];
-
-    $con = new PDO("mysql:host=localhost;dbname=tcc2023", "root", "");
-    echo 'conectado com sucesso';
-
 ?>
 
 
@@ -16,7 +12,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login or Register yourself</title>
-    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="<?php echo PATH_CSS; ?>login.css">
 </head>
 <body>
     
@@ -33,7 +29,7 @@
         <input type="text" name="username" placeholder="required*">
 
         <label for="cpf">CPF</label>
-        <input onkeyup="styliseCpfField()" type="text" name="cpf" placeholder="required*">
+        <input onkeyup="styliseCpfField()" maxlength="15" type="text" name="cpf" placeholder="required*">
 
         <label for="email">E-mail</label>
         <input type="email" name="email" placeholder="required*">
@@ -48,7 +44,7 @@
 
     </form>
 
-    <script src="script.js"></script>
+    <script src="<?php echo PATH_SCRIPTS; ?>script.js"></script>
 
 </body>
 </html>
